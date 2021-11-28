@@ -1,3 +1,6 @@
 *.opensdf
-robot/ak_Robot_1/ak_Robot_1/Debug/*
-robot/ak_Robot_1/Debug/*
+ak_Robot_1/Debug/*
+Debug/*
+ipch/*
+*.suo
+*.sdf
