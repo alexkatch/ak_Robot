@@ -38,13 +38,13 @@ typedef struct {
 	double x;
 	double y;
 	double z;
-} POINT;
+} Pnt;
 
 typedef struct {
 	int numbFEA;
-	POINT p1;
-	POINT p2;
-	POINT p3;
+	Pnt p1;
+	Pnt p2;
+	Pnt p3;
 	double As1;
 	double As2;
 	double As3;
@@ -105,4 +105,5 @@ extern AK_ROBOT_1_API int fnak_getNodCountRobot();
 extern AK_ROBOT_1_API int fnak_getNod_Robot(int nodNumb ,double *x,double *y,double *z);
 
 extern  AK_ROBOT_1_API int fnak_addKZ_Robot(wchar_t *kz ,int_list nodes);
-extern   AK_ROBOT_1_API int fnak_freeNod_Robot();
+extern  AK_ROBOT_1_API int fnak_freeNod_Robot();
+extern  AK_ROBOT_1_API int fnak_getArmShellsToFileEDF_Robot(int element, wchar_t *fileNameEdf);

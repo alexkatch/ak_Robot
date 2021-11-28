@@ -260,6 +260,13 @@ Make info FEA  1 shell elemet for write im file EDF
 
 */
 
-AK_ROBOT_1_API int fnak_getArmShellsToFileEDF_Robot()
+AK_ROBOT_1_API int fnak_getArmShellsToFileEDF_Robot(int element,wchar_t *fileNameEdf)
 {
+FILE*  file ;
+file = _wfopen(fileNameEdf,_T("a")); //_T("w")) ;
+
+
+
+	 fclose(file) ;
+	return 1;
 }
